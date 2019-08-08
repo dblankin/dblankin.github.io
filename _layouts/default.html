@@ -1,56 +1,29 @@
 <!DOCTYPE html>
-
-<html class="fa-events-icons-ready">
-
-<head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-    <link href="https://use.fontawesome.com/d1341f9b7a.css" media="all" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="PersonalWebPageStyle.css">
-    <link rel="icon" href="./img/halfwayhome.ico" sizes="256x256">
-    <title>{{ page.title }}</title>
-
-
-
-</head>
-
-<body>
-    <div class="box">
-
-        <div class="mySlideShow fade" style="display: block;">
-            <img src="./img/business_profile.jpg" alt="David Blankinship" class="box-img" width="300" height="300">
-        </div>
-
-        <div class="mySlideShow fade" style="display: none;">
-            <img src="./img/Family.jpg" alt="David Blankinship" class="box-img" width="300" height="300">
-        </div>
-
-        <div class="mySlideShow fade" style="display: none;">
-            <img src="./img/Friends.jpg" alt="David Blankinship" class="box-img" width="300" height="300">
-        </div>
-
-        <div class="mySlideShow fade" style="display: none;">
-            <img src="./img/DM Dave.jpg" alt="David Blankinship" class="box-img" width="300" height="300">
-        </div>
-
-        <div style="text-align:center">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <br>
-        
-        <div class="container">
-            
-            {{ content }}
-            
-        </div>
-        
-    </div>
-
-
-</body>
-
-</html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:blankin.david@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/dblankin">github.com/dblankin</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
