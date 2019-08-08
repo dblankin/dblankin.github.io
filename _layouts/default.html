@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
     <link href="https://use.fontawesome.com/d1341f9b7a.css" media="all" rel="stylesheet">
-    <link rel="stylesheet" href="PersonalWebPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="PersonalWebPageStyle.css">
     <link rel="icon" href="./img/halfwayhome.ico" sizes="256x256">
-    <title>David Blankinship</title>
+    <title>{{ page.title }}</title>
 
 
 
@@ -41,60 +41,13 @@
             <span class="dot"></span>
         </div>
         <br>
-
-        <h1>
-            David Blankinship</h1>
-        <h2>
-            Quality Manager</h2>
-        <h3>- Coding Enthusiast -</h3>
-        <hr>
-        <h3>
-            <p>From day one, this self-taught journey has been both exciting and exhausting. Within a very short time I quickly realized a passion for continued learning and development, front to back. Utilizing my transferable skills derived from a career
-                in Quality has allowed me to apply out-of-the-box problem solving approaches resulting in a shorter learning curve approaching each milestone.</p>
-        </h3>
-        <h3>
-            <p>#HTML #CSS #JavaScript #NodeJS #Python #PythonDataScience #PostgreSQL
-            </p>
-        </h3>
-
-
-
-        <h2>
-            <a id="resume" href="https://docs.google.com/document/d/1ChWoUUAhNbQOYroo1VZTJEsHFWLj2qOSkPYlzYwgDLQ/edit?usp=sharing">Resumé</a>
-
-        </h2>
-
-
-
-        <ul>
-            <li><a href="https://www.facebook.com/glenn.blankin/timeline?lst=100006341160302%3A100006341160302%3A1548729476"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/BlankinDavid"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-            <!-- <li><a href="https://plus.google.com/u/0/105751645295828132265"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li> -->
-        </ul>
-
-        <script>
-            var slideIndex = 0;
-            showSlides();
-
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlideShow");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-            }
-        </script>
+        
+        <div class="container">
+            
+            {{ content }}
+            
+        </div>
+        
     </div>
 
 
