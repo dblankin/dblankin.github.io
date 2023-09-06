@@ -14,15 +14,15 @@ h1 {
 
 .circular-deer {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
     
 }   
 .circular-deer img { 
     width: 60%; 
     height: 100%; 
-    padding-left: 400px;
-    padding-right: 400px;
+    /*padding-left: 400px;
+    padding-right: 400px;*/
     border-radius: 40%;
 }
 
