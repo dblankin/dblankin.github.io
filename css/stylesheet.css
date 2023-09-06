@@ -1,23 +1,28 @@
-<!DOCTYPE html>
+body {
+    background-color: #000000;
+}
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Demo 9-6-23</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <body>
-       <h1>
-        "Countdown to Opening Day"
-       </h1>
-       <h2 id="days"></h2>
-       
-       <div class="circular-deer"><img class="deer" src = "\images\deer.jpg" alt="deer" /></div>
-        
-        <script src="myscript.js"></script>
-        
-    </body>
-</html>
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#days {
+    text-align: center;
+    color: white;
+}
+
+.circular-deer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}   
+.circular-deer img { 
+    width: 60%; 
+    height: 100%; 
+    padding-left: 400px;
+    padding-right: 400px;
+    border-radius: 40%;
+}
+
