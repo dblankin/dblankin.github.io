@@ -34,3 +34,16 @@ div {
         font-size: 28px;
     }
 }
+
+@media only screen and (min-width: 375px) {
+    img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 50%;
+
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
