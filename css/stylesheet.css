@@ -16,14 +16,14 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 800px;
+    max-height: 800px;
     
 }   
 @media screen and (max-width: 800px) {
     .circular-deer img { 
-        padding-left: 50%;
-        padding-right: auto;
+        padding-left: 25%;
+        padding-right: 25%;
         width: 60%; 
         height: 100%; 
         border-radius: 50%;
