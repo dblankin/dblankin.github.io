@@ -22,8 +22,10 @@ h1 {
 }   
 @media screen and (max-width: 800px) {
     .circular-deer img { 
-    width: 60%; 
-    height: 100%; 
-    border-radius: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%; 
+        height: 100%; 
+        border-radius: 40%;
 }
 
