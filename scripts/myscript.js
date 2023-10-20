@@ -1,5 +1,5 @@
 // Set a start date to count down to
-var countDownDate = new Date("Oct 14, 2023 6:00:00").getTime();
+var countDownDate = new Date("Feb 10, 2024 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -22,7 +22,7 @@ var x = setInterval(function() {
 
 
     // If the count down is finished, make another countdown for the closing date
-        if (distance < 0) {
+        /*if (distance < 0) {
             clearInterval(x);
 
             // Set a new end date to count down to
@@ -43,7 +43,7 @@ var x = setInterval(function() {
             // Display the result in the element with id="days"
             document.getElementById("days").innerHTML = day + "d " + hours + "h " + minutes + "m " + seconds + "s "
         
-        } 
+        } */
 
 
 }, 1000);
