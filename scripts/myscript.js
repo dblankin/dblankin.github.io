@@ -35,10 +35,10 @@ var x = setInterval(function() {
             var newDistance = newCountDownDate - newNow;
 
             // Time Calculation for the new date
-            var day = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var day = Math.floor(newDistance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((newDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((newDistance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((newDistance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="days"
             document.getElementById("days").innerHTML = day + "d " + hours + "h " + minutes + "m " + seconds + "s "
